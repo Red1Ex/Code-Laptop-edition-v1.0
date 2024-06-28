@@ -1,0 +1,452 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'MonospaceRegular';
+}
+
+/* @media (min-width: 1800px){
+    .animarm{
+        margin-top: 1000px;
+        width: 25%;
+        z-index: 5;
+        margin-left: 250px;
+    }
+    .eduh{
+        width: auto;
+        height: 1000px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(18, 18, 18);
+        color: white;
+        border-left: 0.2px solid rgba(206, 114, 60, 0.2);
+        margin-left: 350px;
+    }
+}
+
+@media (min-width: 1500px){
+    .animarm{
+        margin-top: 290px; 
+    }
+    .eduh{
+        width: auto;
+        height: 700px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(18, 18, 18);
+        color: white;
+        border-left: 0.2px solid rgba(206, 114, 60, 0.2);
+        margin-left: 350px;
+    }
+} */
+
+.header{
+    width: auto;
+    background-color: rgb(18, 18, 18);
+    font-family: 'MonospaceRegular';
+    display: flex;
+
+}
+.rightbox{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.rightbox img{
+    margin-top: 40px;
+    width: 200px;
+    margin-left: 100px;
+}
+/* Далее настройка иконок справа перепутал райт и лефт */
+.leftbox {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 90px;
+}
+
+.leftbox a{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s linear;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.anothercolor{
+    color: white;
+}
+
+.homepage{
+    color: gray;
+}
+.leftbox a:hover{
+    color: rgb(86,140,161);
+}
+
+.firstimg{
+opacity:1px;
+display:block;
+position:absolute;
+z-index:100;
+transition-duration:0.96s;
+-webkit-transition-duration:0.96s;
+-moz-transition-duration:0.96s;
+-o-transition-duration:0.96s;
+-ms-transition-duration:0.96s;
+}
+
+.firstimg:hover{
+    opacity:0.00;
+}
+
+
+.leftbox img{
+    width: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.namenprof, .preLoire, .educationone, .eduh, .educationtwo, .jobh, .threed, .somecode {
+    width: auto;
+    height: 600px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    border-left: 0.2px solid rgba(206, 114, 60, 0.2);
+    margin-left: 350px;
+}
+
+.line {
+    position: fixed;
+    top: 290px;
+    bottom: 0;
+    width: 2px;
+    background: rgb(206, 114, 60);
+    left: 350px;
+    animation: lineAnimation 2s, forwards;
+  }
+
+  .dot {
+    position: absolute;
+    height:10px;
+    width: 10px;
+    background: rgb(206, 114, 60);
+    border-radius: 50%;
+    left: -4px;
+    animation: pulse 2s infinite;
+  }
+
+.namenprof h1, .preLoire h1, .educationone h1, .eduh h1, .educationtwo h1, .jobh h1, .threed h1, .somecode h1 {
+    margin-left: 30px;
+    font-size: 38pt;
+    z-index: 9999;
+}
+
+.namenprof p, .preLoire p, .educationone p, .eduh p, .educationtwo p, .jobh p, .threed p, .somecode p {
+    margin-left: 30px;
+    font-size: 14pt;
+    z-index: 9999;
+}
+
+.animh.active{
+    animation: dropDown 2s forwards;
+    opacity: 1;
+}
+
+.animp.active{
+    animation: textanim 2s ease 0s 1 normal forwards;
+    opacity: 1;
+}
+
+.maincont{
+    background-color: rgb(18, 18, 18);
+    padding-top: 230px;
+}
+
+.Loire{
+    position: relative;
+    width: auto;
+    height: 600px;
+    padding-left: 380px;
+    display: flex;
+    justify-content: center;
+}
+
+.bottle{
+    width: 820px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 3;
+}
+
+.firstPost{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 160px;
+    height: 240px;
+}
+
+.secondPost{
+    width: 160px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+
+.theerdPost{
+    width: 160px;
+    height: 240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.endinf{
+    width: auto;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(18, 18, 18);
+    color: white;
+    border-left: 1px solid rgb(206, 114, 60);
+    margin-left: 350px;
+}
+.footer{
+    display:flex;
+    justify-content: center;
+    color: dimgrey;
+    background-color: rgb(18, 18, 18);
+    width: auto;
+    height: 100px;
+}
+
+.footer h6{
+    padding-top: 50px;
+}
+
+.loaderContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(18, 18, 18);
+    z-index: 10000;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.loaderContainer.active{
+    display: none;
+}
+
+.loader{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(206, 114, 60);
+    animation: move 3.1s linear infinite;
+}
+
+@keyframes move{
+    from{
+        width: 0%;
+    }
+    30%{
+        width: 45%;
+    }
+    to{
+        width: 100%;
+    }
+}
+@font-face {
+    font-family: 'MonospaceRegular';
+    src: url(fonts/Monospace.ttf);
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+.graytext {
+    color: gray;
+}
+
+.greentext {
+    color: rgb(86,140,161);
+}
+
+.orangetext{
+    color: rgb(206, 114, 60);
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    
+    70% {
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    
+    100% {
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+  @keyframes lineAnimation {
+    0% {
+      height: 0;
+      bottom: 50%;
+    }
+    100% {
+      height: 100%;
+      bottom: 0;
+    }
+  }
+
+  @keyframes textanim {
+	0% {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes dropDown {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+.preLoire{
+    height: 200px;
+}
+
+.gallery{
+    display: none;
+}
+
+.threed img{
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.animbody{
+    margin-top: 20px;
+    width: 25%;
+    z-index: 999;
+    margin-left: 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+.animarm{
+    width: 25%;
+    margin-top: 290px;
+    z-index: 5;
+    margin-left: 250px;
+    animation: diagonal-float 3s ease-in-out infinite;
+}
+
+@keyframes diagonal-float {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(10px, -10px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.eduh img{
+    position: absolute;
+}
+
+.VSHPMlog{
+    width: 30%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.VSHPMlog.active{
+    animation: textanim 2s ease 0s 1 normal forwards;
+    opacity: 1;
+}
+
+
+.studlog{
+    width: 20%;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.studlog.active{
+    animation: textanimleft 2s ease 0s 1 normal forwards;
+    opacity: 1;
+}
+
+
+@keyframes textanimleft {
+	0% {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.Innopolislog{
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.Innopolislog.active{
+    animation: textanim 2s ease 0s 1 normal forwards;
+    opacity: 1;
+}
+
+.educationtwo{
+    height: auto;
+}
+
+.eduh{
+    height: 700px;
+}
+
+.threed{
+    height: auto;
+}
